@@ -14,7 +14,7 @@ module ExternalSyncronization
 
       attr_reader :account, :synchronization, :params
 
-      def parse_response_body(response_body)
+      def create_equipment(response_body)
         json_equipment = response_body.equipments.select { |e| e[:serial_id] == params[:serial_id] }.first
         equipment_params = EquipmentParamsBuilder.new(json_equipment).call
         equipment = account.equipments.create(equipment_params)
