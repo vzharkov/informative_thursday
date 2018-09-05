@@ -33,11 +33,11 @@ module ExternalSyncronization
       end
 
       def build_company_from_params(client_inn, client_name)
-      # 24 LoC
-    end
+        # 24 LoC
+      end
 
-    def build_equipment_comment(json_equipment)
-      # 15 LoC
-    end
+      def build_equipment_comment(json_equipment)
+        # 15 LoC
+      end
   end
 end
